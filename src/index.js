@@ -6,13 +6,14 @@ import TopBar from 'components/topBar'
 import { CurrentUserProvider } from 'contexts/currentUser'
 import CurrentUserChecker from 'components/currentUserChecker'
 
+
 const App = () => {
   return (
     <CurrentUserProvider>
       <CurrentUserChecker>
         <BrowserRouter>
           <TopBar/>
-          <Routes/>
+          <Routes />
         </BrowserRouter>
       </CurrentUserChecker>
     </CurrentUserProvider>
